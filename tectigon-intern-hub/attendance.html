@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance - Tectigon Intern Hub</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Sidebar -->
+
+        <aside class="sidebar">
+
+            <h2>Tectigon</h2>
+
+            <ul>
+
+                <li>
+                    <a href="index.html">
+                        <i class="fa-solid fa-house"></i>
+                        Dashboard
+                    </a>
+                </li>
+
+                <li>
+                    <a href="tasks.html">
+                        <i class="fa-solid fa-list-check"></i>
+                        Tasks
+                    </a>
+                </li>
+
+                <li>
+                    <a href="standups.html">
+                        <i class="fa-solid fa-clipboard"></i>
+                        Standups
+                    </a>
+                </li>
+
+                <li class="active">
+                    <a href="attendance.html">
+                        <i class="fa-solid fa-calendar"></i>
+                        Attendance
+                    </a>
+                </li>
+
+                <li>
+                    <a href="team.html">
+                        <i class="fa-solid fa-users"></i>
+                        Team
+                    </a>
+                </li>
+
+                <li>
+                    <a href="resources.html">
+                        <i class="fa-solid fa-book"></i>
+                        Resources
+                    </a>
+                </li>
+
+                <li>
+                    <a href="profile.html">
+                        <i class="fa-solid fa-user"></i>
+                        Profile
+                    </a>
+                </li>
+
+            </ul>
+
+        </aside>
+
+        <!-- Main Content -->
+
+        <main class="main-content">
+
+            <!-- Navbar -->
+
+            <nav class="navbar">
+
+                <h2>Attendance Dashboard</h2>
+
+                <div class="nav-right">
+                    <i class="fa-solid fa-bell"></i>
+                    <img src="images\logo.png" alt="profile">
+                </div>
+
+            </nav>
+
+            <!-- Stats Cards -->
+
+            <section class="cards">
+
+                <div class="card">
+                    <h2>92%</h2>
+                    <p>Attendance Rate</p>
+                </div>
+
+                <div class="card">
+                    <h2>46</h2>
+                    <p>Present Days</p>
+                </div>
+
+                <div class="card">
+                    <h2>4</h2>
+                    <p>Absent Days</p>
+                </div>
+
+                <div class="card">
+                    <h2>12</h2>
+                    <p>Day Streak </p>
+                </div>
+
+            </section>
+
+            <!-- Attendance Grid -->
+
+            <section class="attendance-container">
+
+                <div class="attendance-card">
+
+                    <h2>Attendance Progress</h2>
+
+                    <div class="progress">
+                        <div class="progress-fill"></div>
+                    </div>
+
+                    <p>92% Overall Attendance</p>
+
+                </div>
+
+                <div class="attendance-card">
+
+                    <h2>Current Streak</h2>
+
+                    <h1>12 Days </h1>
+
+                    <p>
+                        You have maintained attendance
+                        for 12 consecutive working days.
+                    </p>
+
+                </div>
+
+            </section>
+
+            <!-- Calendar -->
+
+            <section class="attendance-card calendar-section">
+
+                <h2>August 2026 Attendance</h2>
+
+                <div class="calendar">
+
+                    <div class="day present">1</div>
+                    <div class="day present">2</div>
+                    <div class="day absent">3</div>
+                    <div class="day present">4</div>
+                    <div class="day present">5</div>
+                    <div class="day present">6</div>
+                    <div class="day present">7</div>
+                    <div class="day present">8</div>
+                    <div class="day present">9</div>
+                    <div class="day absent">10</div>
+
+                </div>
+
+            </section>
+
+            <!-- Recent Records -->
+
+            <section class="attendance-records">
+
+                <h2>Recent Attendance Records</h2>
+
+                <table>
+
+                    <tr>
+                        <th>Date</th>
+                        <th>Status</th>
+                    </tr>
+
+                    <tr>
+                        <td>01 Aug 2026</td>
+                        <td class="present-text">Present</td>
+                    </tr>
+
+                    <tr>
+                        <td>02 Aug 2026</td>
+                        <td class="present-text">Present</td>
+                    </tr>
+
+                    <tr>
+                        <td>03 Aug 2026</td>
+                        <td class="absent-text">Absent</td>
+                    </tr>
+
+                    <tr>
+                        <td>04 Aug 2026</td>
+                        <td class="present-text">Present</td>
+                    </tr>
+
+                    <tr>
+                        <td>05 Aug 2026</td>
+                        <td class="present-text">Present</td>
+                    </tr>
+
+                </table>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
