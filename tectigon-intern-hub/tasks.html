@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks - Tectigon Intern Hub</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Sidebar -->
+
+        <aside class="sidebar">
+
+            <h2>Tectigon</h2>
+
+            <ul>
+                <li>
+                    <i class="fa-solid fa-house"></i>
+                    Dashboard
+                </li>
+
+                <li class="active">
+                    <i class="fa-solid fa-list-check"></i>
+                    Tasks
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-clipboard"></i>
+                    Standups
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-calendar"></i>
+                    Attendance
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-users"></i>
+                    Team
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-book"></i>
+                    Resources
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-user"></i>
+                    Profile
+                </li>
+
+            </ul>
+
+        </aside>
+
+        <!-- Main Content -->
+
+        <main class="main-content">
+
+            <nav class="navbar">
+
+                <h2>Task Management</h2>
+
+                <div class="nav-right">
+                    <i class="fa-solid fa-bell"></i>
+                    <img src="https://i.pravatar.cc/40" alt="">
+                </div>
+
+            </nav>
+
+            <!-- Search + Add -->
+
+            <section class="task-controls">
+
+                <input type="text" id="searchBox" placeholder="Search Tasks...">
+
+                <button id="addTaskBtn" onclick="addTask()">
+                    + Add Task
+                </button>
+
+            </section>
+
+            <!-- Filters -->
+
+            <section class="filters">
+
+                <button class="filter-btn active-filter" onclick="showAll()">
+                    All
+                </button>
+
+                <button class="filter-btn" onclick="showPending()">
+                    Pending
+                </button>
+
+                <button class="filter-btn" onclick="showCompleted()">
+                    Completed
+                </button>
+
+            </section>
+
+            <!-- Tasks -->
+
+            <section class="task-grid">
+
+                <!-- Completed Task -->
+
+                <div class="task-card completed-task">
+
+                    <h3>Build Login Page</h3>
+
+                    <p>
+                        Design and develop responsive login page.
+                    </p>
+
+                    <span class="completed">
+                        Completed
+                    </span>
+
+                </div>
+
+                <!-- Pending Task -->
+
+                <div class="task-card pending-task">
+
+                    <h3>Create Dashboard</h3>
+
+                    <p>
+                        Develop intern dashboard UI.
+                    </p>
+
+                    <span class="pending">
+                        Pending
+                    </span>
+
+                </div>
+
+                <!-- Pending Task -->
+
+                <div class="task-card pending-task">
+
+                    <h3>Design Profile Page</h3>
+
+                    <p>
+                        Build profile page layout.
+                    </p>
+
+                    <span class="pending">
+                        Pending
+                    </span>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
