@@ -121,3 +121,31 @@ function addTask() {
     taskGrid.appendChild(newTask);
 
 }
+function searchResources() {
+
+    let input =
+        document.getElementById("resourceSearch")
+            .value
+            .toLowerCase();
+
+    let cards =
+        document.querySelectorAll(".resource-card");
+
+    cards.forEach(card => {
+
+        let text =
+            card.innerText.toLowerCase();
+
+        if (text.includes(input)) {
+
+            card.style.display = "block";
+
+        } else {
+
+            card.style.display = "none";
+
+        }
+
+    });
+
+}

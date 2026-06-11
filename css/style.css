@@ -1000,30 +1000,115 @@ tr {
     border-radius: 20px;
 }
 
-.card-link{
-    text-decoration:none;
-    color:white;
+.card-link {
+    text-decoration: none;
+    color: white;
 }
 
-.card{
-    cursor:pointer;
-    transition:0.3s;
+.card {
+    cursor: pointer;
+    transition: 0.3s;
 }
 
-.card:hover{
-    transform:translateY(-8px);
-    box-shadow:0 10px 25px rgba(59,130,246,0.25);
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(59, 130, 246, 0.25);
 }
 
-.filter-btn{
-    padding:10px 20px;
-    border:none;
-    border-radius:10px;
-    cursor:pointer;
-    transition:0.3s;
+.filter-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
-.active-filter{
-    background:#3b82f6;
-    color:white;
+.active-filter {
+    background: #3b82f6;
+    color: white;
+}
+
+.resource-btn {
+
+    background: #3b82f6;
+
+    color: white;
+
+    border: none;
+
+    padding: 12px 20px;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.resource-btn:hover {
+
+    transform: translateY(-3px);
+
+    background: #2563eb;
+}
+
+.logo-section {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 40px;
+}
+
+.logo-section img {
+
+    width: 120px;
+
+    height: auto;
+
+    object-fit: contain;
+
+}
+
+.logo-section img {
+
+    width: 180px;
+
+    height: auto;
+
+}
+
+.logo-section {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    margin-bottom: 40px;
+
+    padding-top: 10px;
+}
+
+.logo-section img {
+
+    width: 150px;
+
+    height: auto;
+}
+
+.team-card {
+
+    transition: 0.3s;
+}
+
+.team-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow: 0 0 25px rgba(59, 130, 246, .3);
 }
